@@ -1,0 +1,17 @@
+$shadow-black: rgba(0,0,0,0.5);
+$shadow-white: #F0E68C;
+
+.table {
+  box-shadow: 0 0 10px $shadow-black;
+  font-family: Georgia;
+  text-shadow: $shadow-white 0 0 2px;
+  font-weight: 900;
+    .tdColor {
+      box-shadow: 0 0 6px $shadow-black;
+      position: relative;
+      left: 50px;
+      bottom: 17px;
+      width: 10px;
+      height: 10px;
+    }
+}
