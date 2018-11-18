@@ -1,11 +1,14 @@
 <table class="table table-hover" matSort (matSortChange)="sortData($event)">
   <tr class="thead-dark">
-    <th mat-sort-header="name">Color</th>
-    <th mat-sort-header="value">Value</th>
+    <th class="head-name" mat-sort-header="name">Color</th>
+    <th  class="head-name" mat-sort-header="value">Value</th>
 
   </tr>
   <tr *ngFor="let dessert of sortedData">
-    <td>{{dessert.name | uppercase}}</td>
+    <td
+      [innerText]='dessert.name | uppercase'
+    >
+    </td>
     <td
       [style.color] = 'dessert.value'
     >

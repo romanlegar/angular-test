@@ -6,8 +6,17 @@ $shadow-white: #F0E68C;
   font-family: Georgia;
   text-shadow: $shadow-white 0 0 2px;
   font-weight: 900;
+    .head-name {
+      font-size: 32px;
+    }
+    .head-name::before {
+      content: "|";
+      position: relative;
+      left: 160px;
+      top: 45px;
+    }
     .tdColor {
-      box-shadow: 0 0 6px $shadow-black;
+      box-shadow: 0 0 1px $shadow-black;
       position: relative;
       left: 50px;
       bottom: 17px;
